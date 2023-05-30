@@ -1,0 +1,26 @@
+USE [openeyes]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[行車紀錄](
+	[員工編號] [char](10) NOT NULL,
+	[危險指數] [float] NULL,
+	[狀態] [nchar](2) NULL,
+	[日期] [datetime] NOT NULL,
+ CONSTRAINT [PK_行車紀錄] PRIMARY KEY CLUSTERED 
+(
+	[員工編號] ASC,
+	[日期] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[行車紀錄] ADD  CONSTRAINT [DF_行車紀錄_日期]  DEFAULT (getdate()) FOR [日期]
+GO
+
+
