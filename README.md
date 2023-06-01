@@ -16,13 +16,10 @@
 
 * 臉部辨識→眼部辨識→灰階(強化對比)→二值化(黑白)→利用白黑比例和自寫演算法得出疲勞值
 
-![臉部辨識](openyoureye/openyoureye/Readme1.jpg)
-![眼睛範圍](openyoureye/openyoureye/Readme2.jpg)
+![臉部辨識](openyoureye/openyoureye/Readme1.jpg)→
+![眼睛範圍](openyoureye/openyoureye/Readme2.jpg)→
 ![取得](openyoureye/openyoureye/Readme3.jpg)
 
-Text to Speech：[文字→語音](https://km-chang.github.io/Demo/Html5SpeechAPI/TextSpeechAI.html?hanashite)
-
-Speech to Text：[語音→文字](https://km-chang.github.io/Demo/Html5SpeechAPI/TextSpeechAI.html?kaite)
 
 ## 步驟
 
